@@ -119,3 +119,6 @@ body{
 .fa-inline{
 	padding-right: 0.25em;
 }
+a{
+	color: hsl(200, 50%, 60%);
+}
