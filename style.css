@@ -47,7 +47,7 @@ body{
 }
 /* section background color */
 .header-bg{
-	background-color: hsl(200, 50%, 60%);
+	background-color: #4C6199;
 }
 
 .footer-bg{
@@ -101,7 +101,7 @@ body{
 	padding: 0px 24px;
 	width: auto;
 	border-radius: 3px;
-	background-color: hsl(200, 50%, 60%);
+	background-color: #33CC8C;
 	color: #FAFAFA;
 	text-align: center;
 	text-decoration: none;
@@ -113,12 +113,20 @@ body{
 
 .button:hover{
 	color: #FAFAFA;
-	background-color: hsl(200, 50%, 50%);
+	background-color: hsl(155, 60%, 40%);
 }
+
+
 
 .fa-inline{
 	padding-right: 0.25em;
 }
+
+.button .fa-external-link{
+	margin: 0 0 0 0.3em;
+	font-size: 0.6em;
+}
+
 a{
 	color: hsl(200, 50%, 60%);
 }
