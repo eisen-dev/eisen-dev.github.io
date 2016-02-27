@@ -1,0 +1,131 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* main */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: #e2e7e9;
+  font-family: "source-han-sans-japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-weight: 300;
+}
+
+.section {
+  padding: 16px 8px;
+  background-color: white;
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* section background color */
+.header-bg {
+  background-color: #4C6199;
+}
+
+.footer-bg {
+  background-color: #e2e7e9;
+}
+
+/* text styles */
+.header-title {
+  font-family: 'Armata', sans-serif;
+  font-weight: normal;
+  letter-spacing: -0.05em;
+  font-size: 3.5em;
+  padding: 8px;
+  color: white;
+  margin: 0;
+}
+
+.header-description {
+  font-size: 1em;
+  color: #f2f2f2;
+}
+
+.section-title {
+  font-weight: normal;
+  font-size: 1.4em;
+  padding: 8px;
+  color: #666666;
+  margin: 0;
+  font-weight: 500;
+}
+
+.footer-text {
+  color: gray;
+  font-size: 0.9em;
+}
+
+.common-text {
+  color: #4d4d4d;
+  font-weight: 300;
+}
+
+/* parts */
+.center-block {
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  margin: 0.25em 1em 0.25em 0;
+  padding: 0px 24px;
+  width: auto;
+  border-radius: 3px;
+  background-color: #33CC8C;
+  color: #FAFAFA;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1em;
+  height: 40px;
+  line-height: 40px;
+}
+.button:hover {
+  color: #FAFAFA;
+  background-color: #29a370;
+}
+
+.fa-inline {
+  padding-right: 0.25em;
+}
+
+.button .fa-external-link {
+  margin: 0 0 0 0.3em;
+  font-size: 0.6em;
+}
+
+a {
+  color: #66aacc;
+}
+
+/*# sourceMappingURL=style.css.map */
