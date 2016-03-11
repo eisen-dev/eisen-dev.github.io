@@ -5,10 +5,22 @@
 	<title lang="en">eisen - package management system and task executioner</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="famfamfam-flags.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://mreq.github.io/slick-lightbox/gh-pages/stylesheets/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/slick-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .thumbnail img { width: 100%; display: block; }
+        h2 { margin-top: 30px; }
+        .container { max-width: 750px; }
+    </style>
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    -->
 </head>
 	<body>
 	<a href="https://github.com/eisen-dev"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
@@ -46,6 +58,17 @@
 						</div>
 					</div>
 				</div>
+                <div class="section">
+                    <div class="inner">
+                        <div class="center-block">
+                            <div class="row" id="default-demo">
+                                <div class="col-xs-4"><a href="images/CbwbBtdUkAAaefB.png" target="_blank" class="thumbnail"><img src="images/CbwbBtdUkAAaefB.png" alt=""></a></div>
+                                <div class="col-xs-4"><a href="images/CbwbBocUkAA9NPK.png" target="_blank" class="thumbnail"><img src="images/CbwbBocUkAA9NPK.png" alt=""></a></div>
+                                <div class="col-xs-4"><a href="images/CbwbBtYVAAEXXN7.png" target="_blank" class="thumbnail"><img src="images/CbwbBtYVAAEXXN7.png" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 				<div class="section">
 					<div class="inner">
 						<div class="center-block">
@@ -82,11 +105,15 @@
 			</div>
 		</div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/slick.js"></script>
+        <script type="text/javascript" src="js/slick-lightbox.js"></script>
         <script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
         <script src="js/js.cookie.js" charset="utf-8" type="text/javascript"></script>
         <script src="https://use.typekit.net/nmo0cpm.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
         <script type="text/javascript">
+            $('#default-demo').slickLightbox();
             // Create language switcher instance
             var lang = new Lang();
             lang.dynamic('jp', 'js/langpack/jp.json');
