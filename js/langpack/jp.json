@@ -1,0 +1,14 @@
+{
+	"token": {
+      "eisen - package management system and task executioner":"eisen - リモートパッケージ管理システム",
+      "remote package manager":"リモートパッケージ管理システム",
+      "what is eisen": "eisenについて",
+      "description": "eisenはわかりやすいGUIをを備えたリモートパッケージ管理システムです。",
+      "description2":"Ansible等の構成管理ツールのラッパーとして動作し、パッケージ管理やタスクの実行をWEBブラウザから操作できます。",
+      "Join eisen on Github": "GitHubでeisenを公開中",
+      "more about eisen" : "eisenを知る",
+      "get last eisen news from social networks" : "BlogやGroup、ソーシャルで最新の情報をチェック"
+	},
+	"regex": [
+	]
+}

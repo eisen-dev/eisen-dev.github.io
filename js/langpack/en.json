@@ -1,0 +1,14 @@
+{
+	"token": {
+      "eisen - package management system and task executioner":"eisen - package management system and task executioner",
+      "remote package manager":"remote package manager",
+      "what is eisen": "eisenについて",
+      "description": "Eisen is a Web application for remote package management",
+      "description2":"and job task manager agentless using Ansible.",
+      "Join eisen on Github": "Join eisen on Github",
+      "more about eisen" : "more about eisen",
+      "get last eisen news from social networks" : "get last eisen news from social networks"
+    },
+	"regex": [
+	]
+}
