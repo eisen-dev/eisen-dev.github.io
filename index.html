@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<title>eisen - リモートパッケージ管理システム</title>
+	<title lang="en">eisen - package management system and task executioner</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
@@ -11,16 +11,17 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 	<body>
-		<div class="wrapper">
+	<a href="https://github.com/eisen-dev"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+	<div class="wrapper">
 			<div class="contents">
 				<div class="btn-group">
-					<a class="btn" href="index-en.html"><i class="famfamfam-flag-gb"></i>EN</a>
-				</div>
+                    <a href="#lang-en" onclick="window.lang.change('en'); return false;">Switch to English</a> | <a href="#lang-jp" onclick="window.lang.change('jp'); return false;">Switch to Japanese</a>
+                </div>
 				<div class="section header header-bg">
 					<div class="inner">
 						<div class="center-block">
 							<h1 class="header-title">eisen</h1>
-							<p class="header-description">リモートパッケージ管理システム</p>
+							<p class="header-description" lang="en">remote package manager</p>
 						</div>
 
 					</div>
@@ -28,10 +29,10 @@
 				<div class="section">
 					<div class="inner">
 						<div class="center-block">
-							<h2 class="section-title">eisenについて</h2>
-							<p class="common-text">eisenはわかりやすいGUIをを備えたリモートパッケージ管理システムです。<br>
-								Ansible等の構成管理ツールのラッパーとして動作し、パッケージ管理やタスクの実行をWEBブラウザから操作できます。</p>
-						</div>
+							<h2 class="section-title" lang="en">what is eisen</h2>
+							<p class="common-text" lang="en" data-lang-token="description">Eisen is a Web application for remote package management</p>
+                            <p class="common-text" lang="en" data-lang-token="description2">and job task manager agentless using Ansible.</p>
+                        </div>
 					</div>
 				</div>
 				<div class="section">
@@ -41,14 +42,14 @@
 							<a href="https://github.com/eisen-dev" class="button">
 								<span><i class="fa fa-github fa-inline"></i>GitHub<i class="fa fa-external-link"></i></span>
 							</a>
-							<p class="common-text">GitHubでeisenを公開中</p>
+							<p class="common-text" lang="en">Join eisen on Github</p>
 						</div>
 					</div>
 				</div>
 				<div class="section">
 					<div class="inner">
 						<div class="center-block">
-							<h2 class="section-title">eisenを知る</h2>
+							<h2 class="section-title" lang="en">more about eisen</h2>
 							<a href="http://eisen-dev.github.io/news/" class="button">
 								<span><i class="fa fa-newspaper-o fa-inline"></i>eisen Blog</span>
 							</a>
@@ -58,7 +59,7 @@
 							<a href="https://twitter.com/eisen_dev" class="button">
 								<span><i class="fa fa-twitter fa-inline"></i>@eisen-dev<i class="fa fa-external-link"></i></span>
 							</a>
-							<p class="common-text">BlogやGroup、ソーシャルで最新の情報をチェック</p>
+							<p class="common-text" lang="en">get last eisen news from social networks</p>
 						</div>
 					</div>
 				</div>
@@ -67,7 +68,8 @@
 						<div class="center-block">
 							<a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="eisen_dev" data-hashtags="eisen">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-						</div>
+                            <a class="github-button" href="https://github.com/eisen-dev" data-style="mega" data-count-href="/eisen-dev/followers" data-count-api="/users/eisen-dev#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @eisen-dev on GitHub">Follow @eisen-dev</a>
+                        </div>
 					</div>
 				</div>
 				<div class="section footer footer-bg">
@@ -79,7 +81,18 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://use.typekit.net/nmo0cpm.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+        <script src="js/js.cookie.js" charset="utf-8" type="text/javascript"></script>
+        <script src="https://use.typekit.net/nmo0cpm.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <script type="text/javascript">
+            // Create language switcher instance
+            var lang = new Lang();
+            lang.dynamic('jp', 'js/langpack/jp.json');
+            lang.init({
+                defaultLang: 'en'
+            });
+        </script>
 	</body>
 </html>
